@@ -1,0 +1,39 @@
+.hero {
+  position: absolute;
+
+  display: flex;
+  flex-direction: row;
+
+  background-color: #ffb8ca;
+  background-image: url(../images/iceCream-desktop1x.png),
+    url(../images/milk-desktop1x.png), url(../images/soTasty-desktop1x.png),
+    url(../images/ellipse-desktop1x.png);
+  background-repeat: no-repeat;
+  background-position: bottom right 450px, bottom 45px left 77px,
+    bottom right 109px, bottom 75px right 267px;
+}
+.hero-main {
+  width: 277px;
+  padding: 171px 0 112px 115px;
+}
+.hero-secondary {
+  width: 200px;
+  padding: 0 0 102px 295px;
+}
+.hero-third {
+  padding: 160px 115px 361px 0;
+}
+.hero-left {
+  margin-right: 611px;
+}
+.hero-right {
+  text-align: right;
+}
+.hz-item {
+  width: 72px;
+  height: 77px;
+  background-image: url(../images/ellipseSmall-desktop1x.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 30px;
+}

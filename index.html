@@ -5,54 +5,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-  <header>
-    <a href="./index.html" class="">
+  <header class="header">
+    <a href="./index.html" class="logo">
     <img srcset="./images/logo1x.png 1x, ./images/logo2x.png 2x"
     src="./images/logo1x.png" alt="company logo"></a>
     <nav>
-      <ul>
-        <li><a href="./index.html" class="">Home</a></li>
-        <li><a href="" class="">About us</a></li>
-        <li><a href="" class="">How it’s made?</a></li>
-        <li><a href="" class="">Our products</a></li>
-        <li><a href="" class="">Contact</a></li>
+      <ul class="header__navigation">
+        <li class="header__navigation-item"><a href="./index.html" class="">Home</a></li>
+        <li class="header__navigation-item"><a href="#part1" class="">About us</a></li>
+        <li class="header__navigation-item"><a href="#part2" class="">How it’s made?</a></li>
+        <li class="header__navigation-item"><a href="#part3" class="">Our products</a></li>
+        <li class="header__navigation-item"><a href="#part4" class="">Contact</a></li>
       </ul>
     </nav>
   <button class="" data-menu-open>
   <svg class="" width="20" height="12">
-    <use href="./images/icons.svg#icon-burger-button"></use>
+    <use href="./images/sprite.svg#icon-Burger"></use>
   </svg>
   </button>
-  <button type="button" class="" data-modal-open>Buy now<svg class="" width="4" height="8">
-    <use href="./images/icons.svg#icon-x"></use>
+  <button type="button" class="button-header" data-modal-open>Buy now<svg class="button-header--sign" width="4" height="8">
+    <use href="./images/sprite.svg#icon-bracket-red"></use>
   </svg>
 </button>
   </header>
+
+
+
+
   <main>
-  <hero>
-    <div>
-      <h1>ice cream made with passion</h1>
-      <button>Products</button>
-      <button>How it’s made?</button>
+  <hero class="hero">
+    <div class="hero-left">
+          <div class="hero-main">
+            <h1>ice cream made with passion</h1>
+            <a href="#part3" type="button" class="button-header--alternative">Products</a>
+            <a href="#part2" type="button" class="button-header">How it’s made?</a>
+          </div>
+          <div class="hero-secondary">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <a href="" class="button-header">
+              <svg class="" width="10" height="7">
+                <use href="./images/sprite.svg#icon-arrow_right"></use>
+              </svg>
+            </a>
+          </div>
     </div>
-    <div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-      <a href="">
-        <svg class="" width="7" height="7">
-        <use href="./images/icons.svg#icon-x"></use>
-      </svg>
-</a>
-    </div>
-    <div>
-      <p>16</p>
-      <p>cafes</p>
-    </div>
-    <div>
-      <p>23</p>
-      <p>food trucks</p>
-    </div>
+        <div class="hero-right">
+          <div class="hero-third">
+            <ul>
+              <li class="hz-item">
+                <span>16</span>
+                <p>cafes</p>
+              </li>
+              <li class="hz-item">
+                <span>23</span>
+                <p>food trucks</p>
+              </li>
+            </ul>
+          </div>
+        </div>
   </hero>
   </main>
 </body>

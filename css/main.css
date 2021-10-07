@@ -1,0 +1,104 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  background-color: transparent;
+}
+
+.header__navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__navigation-item:not(last-child) {
+  margin-right: 35px;
+}
+
+.button-header {
+  height: 44px;
+  color: #d41443;
+  background-color: white;
+  fill: #d41443;
+  border-radius: 22px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 00.06em;
+  border: hidden;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-header:hover, .button-header:focus {
+  background-color: #ecebeb;
+}
+
+.button-header--alternative {
+  color: white;
+  background-color: #d41443;
+  border-radius: 22px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.87;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 700;
+  letter-spacing: 00.06em;
+  border: hidden;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-header--alternative:hover, .button-header--alternative:focus {
+  background-color: #c7133e;
+}
+
+.button-header--sign {
+  margin-left: 12px;
+}
+
+.hero {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  background-color: #ffb8ca;
+  background-image: url(../images/iceCream-desktop1x.png), url(../images/milk-desktop1x.png), url(../images/soTasty-desktop1x.png), url(../images/ellipse-desktop1x.png);
+  background-repeat: no-repeat;
+  background-position: bottom right 450px, bottom 45px left 77px, bottom right 109px, bottom 75px right 267px;
+}
+
+.hero-main {
+  width: 277px;
+  padding: 171px 0 112px 115px;
+}
+
+.hero-secondary {
+  width: 200px;
+  padding: 0 0 102px 295px;
+}
+
+.hero-third {
+  padding: 160px 115px 361px 0;
+}
+
+.hero-left {
+  margin-right: 611px;
+}
+
+.hero-right {
+  text-align: right;
+}
+
+.hz-item {
+  width: 72px;
+  height: 77px;
+  background-image: url(../images/ellipseSmall-desktop1x.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 30px;
+}
+/*# sourceMappingURL=main.css.map */
