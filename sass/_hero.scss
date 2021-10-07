@@ -1,6 +1,8 @@
 .hero {
   position: absolute;
 
+  height: 665px;
+
   display: flex;
   flex-direction: row;
 
@@ -11,29 +13,91 @@
   background-repeat: no-repeat;
   background-position: bottom right 450px, bottom 45px left 77px,
     bottom right 109px, bottom 75px right 267px;
+  background-size: auto;
 }
 .hero-main {
   width: 277px;
-  padding: 171px 0 112px 115px;
+  padding: 171px 0 112px 69px;
 }
 .hero-secondary {
   width: 200px;
-  padding: 0 0 102px 295px;
+  padding: 0 0 102px 249px;
 }
 .hero-third {
-  padding: 160px 115px 361px 0;
+  padding: 160px 0 361px 431px;
 }
 .hero-left {
-  margin-right: 611px;
+  // margin-right: 611px;
+  width: 50%;
 }
 .hero-right {
   text-align: right;
+  width: 50%;
 }
-.hz-item {
-  width: 72px;
-  height: 77px;
-  background-image: url(../images/ellipseSmall-desktop1x.png);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 30px;
+.hero-third-ul-item1 {
+  position: absolute;
+  background-color: transparent;
+  top: 4px;
+  right: 18px;
+  width: 54px;
+  height: 73px;
+  // background-image: url(../images/ellipseSmall-desktop1x.png);
+  // background-repeat: no-repeat;
+  // background-position: top right;
+  // background-size: 30px;
+}
+
+.link-button {
+  display: inline-block;
+  // width: 138px;
+  // height: 40px;
+  text-align: center;
+  padding: 15px 23px;
+  margin-left: 15px;
+  border-radius: 22px;
+  background-color: #fff;
+  color: #d41443;
+
+  &--alternative {
+    display: inline-block;
+    // width: 138px;
+    // height: 40px;
+    text-align: center;
+    padding: 15px 23px;
+    border-radius: 22px;
+    background-color: #d41443;
+    color: white;
+  }
+
+  &--arrow {
+    display: inline-block;
+    position: relative;
+
+    width: 18px;
+    height: 18px;
+    // text-align: center;
+    border-radius: 50%;
+    background-color: #fff;
+    fill: #d41443;
+  }
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title {
+  font-size: 22px;
+  color: white;
+  margin-bottom: 20px;
+}
+.title-correction {
+  font-size: 34px;
+  color: #d41443;
+}
+.hero-secondary--text {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 20px;
 }

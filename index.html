@@ -8,20 +8,20 @@
   <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-  <header class="header">
-    <a href="./index.html" class="logo">
+  <header class="header container">
+    <a class="logo" href="./index.html">
     <img srcset="./images/logo1x.png 1x, ./images/logo2x.png 2x"
     src="./images/logo1x.png" alt="company logo"></a>
-    <nav>
-      <ul class="header__navigation">
-        <li class="header__navigation-item"><a href="./index.html" class="">Home</a></li>
-        <li class="header__navigation-item"><a href="#part1" class="">About us</a></li>
-        <li class="header__navigation-item"><a href="#part2" class="">How it’s made?</a></li>
-        <li class="header__navigation-item"><a href="#part3" class="">Our products</a></li>
-        <li class="header__navigation-item"><a href="#part4" class="">Contact</a></li>
+    <nav class="header__navigation">
+      <ul class="header__navigation-ul">
+        <li class="header__navigation-ul-item"><a class="header__navigation-ul-item-link" href="./index.html">Home</a></li>
+        <li class="header__navigation-ul-item"><a class="header__navigation-ul-item-link" href="#part1">About us</a></li>
+        <li class="header__navigation-ul-item"><a class="header__navigation-ul-item-link" href="#part2">How it’s made?</a></li>
+        <li class="header__navigation-ul-item"><a class="header__navigation-ul-item-link" href="#part3">Our products</a></li>
+        <li class="header__navigation-ul-item"><a class="header__navigation-ul-item-link" href="#part4">Contact</a></li>
       </ul>
     </nav>
-  <button class="" data-menu-open>
+  <button type="button" class="button-menu" data-menu-open>
   <svg class="" width="20" height="12">
     <use href="./images/sprite.svg#icon-Burger"></use>
   </svg>
@@ -36,17 +36,17 @@
 
 
   <main>
-  <hero class="hero">
+  <hero class="hero container">
     <div class="hero-left">
           <div class="hero-main">
-            <h1>ice cream made with passion</h1>
-            <a href="#part3" type="button" class="button-header--alternative">Products</a>
-            <a href="#part2" type="button" class="button-header">How it’s made?</a>
+            <h1 class="title">ice cream made with <span class="title-correction">passion</span></h1>
+            <a href="#part3" class="link-button--alternative">Products</a>
+            <a href="#part2" class="link-button">How it’s made?</a>
           </div>
           <div class="hero-secondary">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            <a href="" class="button-header">
-              <svg class="" width="10" height="7">
+            <p class="hero-secondary--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <a href="" class="link-button--arrow">
+              <svg class="arrow" width="10" height="7">
                 <use href="./images/sprite.svg#icon-arrow_right"></use>
               </svg>
             </a>
@@ -54,14 +54,14 @@
     </div>
         <div class="hero-right">
           <div class="hero-third">
-            <ul>
-              <li class="hz-item">
-                <span>16</span>
-                <p>cafes</p>
+            <ul class="hero-third-ul">
+              <li class="hero-third-ul-item">
+                <span class="hero-third-ul-item-number">16</span>
+                <p class="hero-third-ul-item-text">cafes</p>
               </li>
-              <li class="hz-item">
-                <span>23</span>
-                <p>food trucks</p>
+              <li class="hero-third-ul-item">
+                <span class="hero-third-ul-item-number">23</span>
+                <p class="hero-third-ul-item-text">food trucks</p>
               </li>
             </ul>
           </div>
