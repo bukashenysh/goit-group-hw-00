@@ -11,20 +11,21 @@
     url(../images/milk-desktop1x.png), url(../images/soTasty-desktop1x.png),
     url(../images/ellipse-desktop1x.png);
   background-repeat: no-repeat;
-  background-position: bottom right 450px, bottom 45px left 77px,
-    bottom right 109px, bottom 75px right 267px;
+  background-position: bottom left 594px, bottom 45px left 77px,
+    bottom left 878px, bottom 75px left 475px;
   background-size: auto;
 }
 .hero-main {
   width: 277px;
-  padding: 171px 0 112px 69px;
+  padding: 171px 0 112px 0;
 }
 .hero-secondary {
   width: 200px;
-  padding: 0 0 102px 249px;
+  padding: 0 0 102px 180px;
 }
 .hero-third {
-  padding: 160px 0 361px 431px;
+  padding: 160px 0 341px 0;
+  // padding-left: 431px;
 }
 .hero-left {
   // margin-right: 611px;
@@ -34,17 +35,31 @@
   text-align: right;
   width: 50%;
 }
-.hero-third-ul-item1 {
-  position: absolute;
+.hero-third-ul-item {
+  position: relative;
   background-color: transparent;
-  top: 4px;
-  right: 18px;
-  width: 54px;
-  height: 73px;
+  margin-bottom: 18px;
+  // top: 4px;
+  // right: 18px;
+  // width: 54px;
+  // height: 73px;
   // background-image: url(../images/ellipseSmall-desktop1x.png);
   // background-repeat: no-repeat;
-  // background-position: top right;
+  // background-position: top -4px right -20px;
   // background-size: 30px;
+
+  &::before {
+    content: "";
+    background-color: #fff;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    top: -4px;
+    right: -18px;
+    z-index: 1;
+  }
 }
 
 .link-button {
@@ -100,4 +115,16 @@
   font-size: 14px;
   color: #fff;
   margin-bottom: 20px;
+}
+.hero-third-ul-item-number {
+  color: #d41443;
+  font-size: 46px;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 2px;
+  display: block;
+}
+.hero-third-ul-item-text {
+  color: #fff;
+  font-size: 14px;
 }
